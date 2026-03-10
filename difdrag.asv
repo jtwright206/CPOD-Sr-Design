@@ -428,7 +428,7 @@ end
 
 trev = t / Torb;
 
-figure();
+figure('Color','w');
 plot3(Xtrue(:,2), Xtrue(:,3), Xtrue(:,1), 'b', 'LineWidth', 1.2); grid on;
 xlabel('y [m]');
 ylabel('z [m]');
@@ -436,7 +436,7 @@ zlabel('x [m]');
 title('Relative trajectory in Hill coordinates');
 view(35,20);
 
-figure();
+figure('Color','w');
 plot(Xtrue(:,3), Xtrue(:,1), 'b', 'LineWidth', 1.5); hold on; grid on;
 plot(0, x_target_center_nom, 'kx', 'MarkerSize', 10, 'LineWidth', 2);
 xlabel('z [m]');
